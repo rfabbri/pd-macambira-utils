@@ -1,11 +1,13 @@
-#N canvas 87 137 430 300 10;
+#N canvas 83 149 430 300 10;
 #X declare -lib mrpeach;
 #X obj 205 148 packOSC;
 #X obj 60 39 import mrpeach;
-#X obj 205 65 inlet;
+#X obj 255 65 inlet;
 #X msg 42 75 connect host port;
 #X obj 205 175 udpsend;
 #X msg 42 95 connect 192.168.2.101 9002;
+#X obj 205 65 inlet;
 #X connect 0 0 4 0;
-#X connect 2 0 0 0;
+#X connect 2 0 4 0;
 #X connect 5 0 4 0;
+#X connect 6 0 0 0;
