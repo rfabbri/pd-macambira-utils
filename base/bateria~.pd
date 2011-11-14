@@ -1,0 +1,98 @@
+#N canvas 143 221 1014 493 10;
+#X floatatom 438 66 9 0 0 0 - - -;
+#X floatatom 438 13 5 0 0 0 - - -;
+#X obj 438 39 / 44.1;
+#X obj 132 72 inlet;
+#X obj 162 45 inlet;
+#X obj 192 72 inlet;
+#X obj 222 45 inlet;
+#X obj 102 207 outlet~;
+#X obj 132 123 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 162 123 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 192 123 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 222 123 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#N canvas 69 49 1011 677 kit-de-bateria 1;
+#X obj 19 196 line~;
+#X obj 259 366 line~;
+#X obj 159 246 line~;
+#X obj 229 86 line~;
+#X obj 259 312 inlet;
+#X obj 19 142 inlet;
+#X obj 159 192 inlet;
+#X obj 229 32 inlet;
+#X obj 183 579 outlet~;
+#X obj 49 86 line~;
+#X obj 49 32 inlet;
+#X msg 91 32 351;
+#X msg 301 312 229;
+#X obj 259 420 *~ 0.5;
+#X obj 229 140 *~ 0.5;
+#X msg 49 59 0 \, 18470 418;
+#X msg 259 339 0 \, 26513 601;
+#X obj 259 393 tabread4~ bumbo;
+#X obj 159 273 tabread4~ chipof;
+#X obj 229 113 tabread4~ chipoa;
+#X obj 49 113 tabread4~ bumbo-low;
+#X obj 19 223 tabread4~ clap;
+#X obj 69 140 *~ 0.4;
+#X obj 159 310 *~ 0.7;
+#X msg 19 169 0 \, 12064 500;
+#X msg 99 172 400;
+#X msg 247 222 115;
+#X msg 159 219 0 \, 4992 180;
+#X msg 316 61 590;
+#X obj 19 250 *~ 0.85;
+#X msg 229 59 0 \, 23936 750;
+#X connect 0 0 21 0;
+#X connect 1 0 17 0;
+#X connect 2 0 18 0;
+#X connect 3 0 19 0;
+#X connect 4 0 16 0;
+#X connect 5 0 24 0;
+#X connect 6 0 27 0;
+#X connect 7 0 30 0;
+#X connect 9 0 20 0;
+#X connect 10 0 15 0;
+#X connect 13 0 8 0;
+#X connect 14 0 8 0;
+#X connect 15 0 9 0;
+#X connect 16 0 1 0;
+#X connect 17 0 13 0;
+#X connect 18 0 23 0;
+#X connect 19 0 14 0;
+#X connect 20 0 22 0;
+#X connect 21 0 29 0;
+#X connect 22 0 8 0;
+#X connect 23 0 8 0;
+#X connect 24 0 0 0;
+#X connect 27 0 2 0;
+#X connect 29 0 8 0;
+#X connect 30 0 3 0;
+#X restore 102 180 pd kit-de-bateria;
+#X obj 102 45 inlet;
+#X obj 102 123 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+-1 -1;
+#X msg 510 54 \; crossfade read ./crossfade.txt \; bumbo-li read ./bumbo-li.txt
+\; bumbo read ./bumbo.txt \; clap read ./clap.txt \; chipof read ./chipof.txt
+\; chipoa read ./chipoa.txt \;;
+#X obj 510 29 bng 15 250 50 0 empty empty load_quando_necessário 0
+-6 0 10 -262144 -1 -1;
+#X msg 429 161 carregar o abstract bateria-samples;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 8 0;
+#X connect 4 0 9 0;
+#X connect 5 0 10 0;
+#X connect 6 0 11 0;
+#X connect 8 0 12 0;
+#X connect 9 0 12 2;
+#X connect 10 0 12 3;
+#X connect 11 0 12 4;
+#X connect 12 0 7 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 1;
+#X coords 0 -1 1 1 140 40 1 100 100;

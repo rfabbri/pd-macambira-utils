@@ -1,0 +1,29 @@
+#N canvas 163 271 450 445 10;
+#X obj 86 61 inlet~;
+#X obj 86 312 *~;
+#X obj 102 283 osc~;
+#X floatatom 161 131 7 0 0 3 soma - -;
+#X obj 86 339 outlet~;
+#X obj 211 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 123 252 0;
+#X obj 105 118 hsl 119 12 3 200 1 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 117 131 5 0 0 3 *barra - -;
+#X obj 102 194 *;
+#X floatatom 216 211 5 0 0 0 - - -;
+#X floatatom 164 101 10 0 0 0 - - -;
+#X obj 102 221 +;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 2 0 1 1;
+#X connect 3 0 12 1;
+#X connect 5 0 6 0;
+#X connect 6 0 2 1;
+#X connect 7 0 9 0;
+#X connect 8 0 9 1;
+#X connect 9 0 10 0;
+#X connect 9 0 12 0;
+#X connect 11 0 2 0;
+#X connect 12 0 11 0;
+#X coords 0 -1 1 1 130 60 1 100 100;

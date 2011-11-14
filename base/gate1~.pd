@@ -1,0 +1,34 @@
+#N canvas 790 309 450 300 10;
+#X obj 91 76 inlet~;
+#X obj 92 207 *~;
+#X obj 143 100 tgl 17 0 \$0-nada \$0-ligador empty 0 -6 0 10 -262144
+-1 -1 0 100;
+#X obj 92 234 outlet~;
+#X obj 106 181 line~;
+#X msg 106 154 \$1 50;
+#X obj 136 46 inlet;
+#X obj 136 74 s \$0-ligador;
+#X obj 204 160 snapshot~;
+#X obj 210 134 metro;
+#X obj 212 104 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
+1;
+#X floatatom 207 197 5 0 0 0 - - -;
+#X obj 149 181 sel 0;
+#X obj 106 127 t f f;
+#X obj 149 207 del 50;
+#X obj 149 234 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 13 0;
+#X connect 4 0 1 1;
+#X connect 4 0 8 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 8 0 11 0;
+#X connect 9 0 8 0;
+#X connect 10 0 9 0;
+#X connect 12 0 14 0;
+#X connect 13 0 12 0;
+#X connect 13 1 5 0;
+#X connect 14 0 15 0;
+#X coords 0 -1 1 1 60 17 1 100 100;
