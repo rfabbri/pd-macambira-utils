@@ -1,4 +1,4 @@
-#N canvas 534 42 715 454 10;
+#N canvas 530 89 715 454 10;
 #X floatatom 203 133 5 0 0 2 time - -;
 #X obj 123 349 cos~;
 #X obj 184 356 cos~;
@@ -31,6 +31,7 @@
 #X obj 102 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 108 207 f;
+#X obj 96 155 t b f;
 #X connect 0 0 25 2;
 #X connect 1 0 6 0;
 #X connect 1 0 13 1;
@@ -59,8 +60,9 @@
 #X connect 23 0 0 0;
 #X connect 24 0 11 0;
 #X connect 25 0 24 0;
-#X connect 26 0 27 0;
+#X connect 26 0 30 0;
 #X connect 27 0 29 1;
-#X connect 28 0 29 0;
 #X connect 29 0 25 0;
+#X connect 30 0 29 0;
+#X connect 30 1 27 0;
 #X coords 0 -1 1 1 140 50 1 100 100;
