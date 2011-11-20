@@ -1,4 +1,4 @@
-#N canvas 358 163 715 454 10;
+#N canvas 350 187 715 454 10;
 #X obj 191 174 metro;
 #X obj 104 132 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
 1;
@@ -22,7 +22,7 @@
 #X obj 189 68 inlet;
 #X obj 108 383 *~;
 #X obj 169 383 *~;
-#X obj 47 330 inlet~;
+#X obj 47 70 inlet~;
 #X obj 107 415 outlet~;
 #X obj 169 415 outlet~;
 #X floatatom 123 133 5 0 100 2 local - -;

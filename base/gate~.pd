@@ -1,4 +1,4 @@
-#N canvas 790 309 450 300 10;
+#N canvas 829 285 450 300 10;
 #X obj 91 76 inlet~;
 #X obj 92 233 *~;
 #X obj 153 100 tgl 17 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
@@ -7,19 +7,15 @@
 #X obj 106 207 line~;
 #X obj 153 76 inlet;
 #X obj 106 181 pack f f;
-#X obj 147 250 print a;
-#X obj 148 278 print b;
 #X obj 133 154 f \$1;
 #X obj 106 127 t f b;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
-#X connect 2 0 10 0;
+#X connect 2 0 8 0;
 #X connect 4 0 1 1;
 #X connect 5 0 2 0;
 #X connect 6 0 4 0;
-#X connect 6 0 8 0;
-#X connect 9 0 6 1;
-#X connect 9 0 7 0;
-#X connect 10 0 6 0;
-#X connect 10 1 9 0;
+#X connect 7 0 6 1;
+#X connect 8 0 6 0;
+#X connect 8 1 7 0;
 #X coords 0 -1 1 1 70 17 1 100 100;

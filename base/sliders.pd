@@ -1,0 +1,16 @@
+#N canvas 398 228 450 300 10;
+#X obj 66 46 ctlin 80;
+#X obj 124 47 ctlin 81;
+#X obj 180 47 ctlin 82;
+#X obj 236 49 ctlin 83;
+#X obj 66 131 s slider1;
+#X obj 131 131 s slider2;
+#X obj 196 132 s slider3;
+#X obj 262 132 s slider4;
+#X text 94 187 graaaaaaaaaaaaaaaaaaaaaaaande bagarai;
+#X floatatom 66 85 5 0 0 0 - - -;
+#X connect 0 0 9 0;
+#X connect 1 0 5 0;
+#X connect 2 0 6 0;
+#X connect 3 0 7 0;
+#X connect 9 0 4 0;
