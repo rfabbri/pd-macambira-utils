@@ -1,4 +1,4 @@
-#N canvas 773 277 450 503 10;
+#N canvas 771 283 450 503 10;
 #X obj 99 76 inlet~;
 #X obj 100 387 *~;
 #X obj 114 361 line~;
@@ -46,6 +46,7 @@
 #X connect 16 0 22 0;
 #X connect 17 0 24 0;
 #X connect 18 0 17 0;
+#X connect 19 0 24 0;
 #X connect 20 0 21 0;
 #X connect 20 1 19 0;
 #X connect 21 0 18 0;
