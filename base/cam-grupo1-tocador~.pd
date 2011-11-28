@@ -1,5 +1,5 @@
-#N canvas 564 125 617 674 10;
-#X obj 209 155 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#N canvas 562 125 617 674 10;
+#X obj 209 155 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 102 131 5 0 100 2 vol - -;
 #X floatatom 136 131 5 0 100 2 space - -;
@@ -14,8 +14,8 @@
 -1;
 #X obj 305 407 spigot;
 #X obj 102 13 t b b b;
-#X obj 105 150 hsl 100 20 30 300 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 105 150 hsl 100 20 30 500 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9900 1;
 #X obj 223 238 * 1;
 #X floatatom 296 154 5 0 0 1 *-vel - -;
 #X msg 121 42 1;
@@ -55,7 +55,7 @@
 #X obj 181 604 outlet~;
 #X obj 241 604 outlet~;
 #X obj 241 128 hsl 110 20 30 6000 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 8300 1;
 #X obj 124 305 * -1;
 #X obj 124 334 + 100;
 #X obj 87 517 cam-grupo1~;
