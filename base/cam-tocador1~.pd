@@ -1,4 +1,4 @@
-#N canvas 588 106 610 693 10;
+#N canvas 586 106 610 693 10;
 #X floatatom 135 137 5 0 0 3 n.som - -;
 #X obj 147 382 line~;
 #X obj 120 275 unpack s f f s;
@@ -103,6 +103,7 @@
 #X obj 348 -2 * -1.5;
 #X obj 347 27 + 1.5;
 #X obj 123 58 * 2;
+#X obj 463 112 inlet;
 #X connect 0 0 13 0;
 #X connect 1 0 40 0;
 #X connect 2 1 25 1;
@@ -177,4 +178,5 @@
 #X connect 64 0 65 0;
 #X connect 65 0 66 0;
 #X connect 67 0 4 0;
+#X connect 68 0 0 0;
 #X coords 0 -1 1 1 264 70 1 100 100;

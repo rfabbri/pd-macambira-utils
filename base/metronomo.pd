@@ -1,4 +1,4 @@
-#N canvas 242 292 450 378 10;
+#N canvas 240 298 450 378 10;
 #X floatatom 103 117 5 0 0 3 metro - -;
 #X obj 103 289 * 1000;
 #X msg 103 208 60;
@@ -11,7 +11,7 @@
 1 1;
 #X obj 104 351 outlet;
 #X obj 103 75 inlet;
-#X obj 153 75 inlet;
+#X obj 183 75 inlet;
 #X obj 194 198 outlet;
 #X connect 0 0 4 0;
 #X connect 1 0 5 0;

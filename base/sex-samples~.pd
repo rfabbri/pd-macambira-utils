@@ -1,4 +1,4 @@
-#N canvas 5 49 795 300 10;
+#N canvas 67 95 795 300 10;
 #X floatatom 438 66 9 0 0 0 - - -;
 #X floatatom 438 13 5 0 0 0 - - -;
 #X obj 438 39 / 44.1;
@@ -33,7 +33,7 @@
 #X obj 312 123 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
 -1 -1;
 #X msg 429 161 carregar o abstract sex-samples-samples;
-#N canvas 248 49 997 474 kit-de-samples-sex-com-disparos 1;
+#N canvas 240 101 997 474 kit-de-samples-sex-com-disparos 1;
 #X obj 292 261 line~;
 #X obj 83 77 line~;
 #X obj 409 173 line~;

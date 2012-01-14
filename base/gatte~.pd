@@ -1,28 +1,30 @@
-#N canvas 622 225 471 427 10;
-#X obj 141 46 inlet~;
-#X floatatom 160 102 5 0 100 0 - - -;
-#X obj 160 76 inlet;
-#X obj 198 76 inlet;
-#X obj 192 101 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
+#N canvas 632 321 471 445 10;
+#X obj 163 46 inlet~;
+#X floatatom 182 101 5 0 100 0 - - -;
+#X obj 182 26 inlet;
+#X obj 220 76 inlet;
+#X obj 214 101 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
 1;
-#X obj 140 397 *~;
-#X obj 140 424 outlet~;
-#X obj 154 371 line~;
-#X obj 154 236 f;
-#X obj 154 210 spigot;
-#X msg 213 236 0;
-#X obj 194 158 sel 1 0;
-#X obj 194 185 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
+#X obj 162 397 *~;
+#X obj 162 424 outlet~;
+#X obj 176 371 line~;
+#X obj 176 236 f;
+#X obj 176 210 spigot;
+#X msg 235 236 0;
+#X obj 216 158 sel 1 0;
+#X obj 216 185 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144
 -1 -1;
-#X obj 154 344 pack f f;
-#X obj 181 317 f \$1;
-#X obj 154 290 t f b;
-#X obj 194 131 t f f;
-#X obj 154 131 t f f;
-#X obj 154 263 * 0.01;
+#X obj 176 344 pack f f;
+#X obj 203 317 f \$1;
+#X obj 176 290 t f b;
+#X obj 216 131 t f f;
+#X obj 176 131 t f f;
+#X obj 176 263 * 0.01;
+#X obj 182 77 f \$2;
+#X obj 212 46 loadbang;
 #X connect 0 0 5 0;
 #X connect 1 0 17 0;
-#X connect 2 0 1 0;
+#X connect 2 0 19 0;
 #X connect 3 0 4 0;
 #X connect 4 0 16 0;
 #X connect 5 0 6 0;
@@ -42,4 +44,6 @@
 #X connect 17 0 9 0;
 #X connect 17 1 8 1;
 #X connect 18 0 15 0;
-#X coords 0 -1 1 1 110 18 1 100 100;
+#X connect 19 0 1 0;
+#X connect 20 0 19 0;
+#X coords 0 -1 1 1 130 17 1 100 100;

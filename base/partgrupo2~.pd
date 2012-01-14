@@ -1,4 +1,4 @@
-#N canvas 0 54 1280 746 10;
+#N canvas 42 79 741 651 10;
 #X obj -190 12 inlet partitura;
 #X obj -85 456 inlet bema;
 #X obj 389 43 symbol \$1;
