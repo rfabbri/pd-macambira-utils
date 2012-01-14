@@ -1,0 +1,19 @@
+#N canvas 118 337 578 300 10;
+#X obj 92 83 inlet;
+#X obj 92 212 outlet;
+#X obj 92 113 * \$1;
+#X obj 92 162 * \$2;
+#X obj 92 182 + \$2;
+#X floatatom 133 173 5 0 0 0 - - -;
+#X floatatom 143 204 5 0 0 0 - - -;
+#X obj 132 152 outlet;
+#X text 137 100 \$1 é o ambito \, a diferenca com a fundamental. 5aP
+= 1.5-1 que sera 0.5. \$2 é o valor da fundamental em relacao com
+a base do sample.;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 5 0;
+#X connect 2 0 7 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 4 0 6 0;
